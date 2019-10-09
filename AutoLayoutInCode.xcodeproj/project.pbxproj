@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AC79FDD7234D2246001F835F /* AutoLayoutInCode.h in Headers */ = {isa = PBXBuildFile; fileRef = AC79FDD5234D2246001F835F /* AutoLayoutInCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC79FDDE234DB428001F835F /* ExtensionUIViewAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79FDDD234DB428001F835F /* ExtensionUIViewAnchor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC79FDD2234D2246001F835F /* AutoLayoutInCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoLayoutInCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC79FDD5234D2246001F835F /* AutoLayoutInCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutInCode.h; sourceTree = "<group>"; };
 		AC79FDD6234D2246001F835F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC79FDDD234DB428001F835F /* ExtensionUIViewAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewAnchor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				AC79FDD5234D2246001F835F /* AutoLayoutInCode.h */,
+				AC79FDDD234DB428001F835F /* ExtensionUIViewAnchor.swift */,
 				AC79FDD6234D2246001F835F /* Info.plist */,
 			);
 			path = AutoLayoutInCode;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					AC79FDD1234D2246001F835F = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC79FDDE234DB428001F835F /* ExtensionUIViewAnchor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		AC79FDDB234D2246001F835F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BSKZ8NR232;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sezertunca.AutoLayoutInCode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		AC79FDDC234D2246001F835F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BSKZ8NR232;
